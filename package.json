@@ -1,0 +1,38 @@
+{
+    "name": "app-task",
+    "version": "1.0.0",
+    "description": "Aplicacion de tareas tipo Asana!!",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon ./index.js",
+        "start": "concurrently \"npm run dev\" \"npm run watch\" ",
+        "watch": "webpack --w --mode development"
+    },
+    "keywords": [
+        "tareas"
+    ],
+    "author": "Alfredo Bravo Cuero",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.0",
+        "concurrently": "^4.1.1",
+        "express": "^4.17.1",
+        "express-validator": "^6.1.1",
+        "mariadb": "^2.1.0",
+        "mysql2": "^1.6.5",
+        "pug": "^2.0.4",
+        "sequelize": "^5.11.0",
+        "shortid": "^2.2.14",
+        "slug": "^1.1.0",
+        "sweetalert2": "^8.14.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "babel-loader": "^8.0.6",
+        "nodemon": "^1.19.1",
+        "webpack": "^4.38.0",
+        "webpack-cli": "^3.3.6"
+    }
+}
