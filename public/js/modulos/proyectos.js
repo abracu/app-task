@@ -10,7 +10,7 @@ if (btnEliminar) {
         // console.log(urlProyecto);
 
         Swal.fire({
-            title: 'Deseas borrae este proyecto?',
+            title: 'Deseas borrar este proyecto?',
             text: "Un proyecto eliminado no se puede recuperar",
             type: 'warning',
             showCancelButton: true,

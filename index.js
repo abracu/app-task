@@ -13,6 +13,7 @@ const db = require('./config/db');
 
 // Importar el modelo
 require('./models/proyectos');
+require('./models/tareas');
 
 db.sync()
     .then(() => console.log('Conectado a la BD'))
@@ -20,6 +21,9 @@ db.sync()
 
 // Creando una app de express
 const app = express();
+
+// Agregamos validator a toda la aplicacion
+
 
 // Donde cargar los archivos staticos
 app.use(express.static('./public'));

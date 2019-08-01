@@ -406,3 +406,13 @@ form input[type="submit"] {
     text-align: center;
     display: block;
 }
+
+pre {
+    background-color: rgba(128, 128, 128, 0.33);
+    padding-left: 74px;
+    border-left-width: 29px;
+    margin-left: 73px;
+    margin-right: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

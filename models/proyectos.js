@@ -6,12 +6,12 @@ const db = require('../config/db');
 
 const Proyectos = db.define('proyectos', {
     id: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.INTEGER(11),
         primaryKey: true,
         autoIncrement: true
     },
-    nombre: Sequelize.STRING,
-    url: Sequelize.STRING
+    nombre: Sequelize.STRING(100),
+    url: Sequelize.STRING(100)
 }, {
     hooks: {
         beforeCreate(proyecto) {
