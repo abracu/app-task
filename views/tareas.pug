@@ -20,14 +20,20 @@ block contenido
                             p=tarea.tarea
                             .acciones
                                 if tarea.estado
-                                    .far.fa-check-circle.completo
+                                    i.far.fa-check-circle.completo
                                 else
-                                    .far.fa-check-circle 
+                                    i.far.fa-check-circle 
                                 i.fas.fa-trash
                 else
                     p No hay tareas en este proyecto
         
         //- pre= vardump(tareas)
+
+        // Avances del proyecto
+        .avance
+            h2 Avance del Proyecto
+            #barra-avance.barra-avance
+                #porcentaje.porcentaje
 
         // Acciones que se pueden realizar
         .contenedor-acciones
